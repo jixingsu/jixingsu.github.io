@@ -76,10 +76,12 @@ tags:
 &emsp;&emsp;在网上找到图片，右键复制图片绝对地址；或自己上传到某个平台（如Github）上，获得图片链接地址。插入图片的代码有两类写法：markdown语法或html语法。html语法比较方便设置对齐方式、图片大小等格式。
 
 ![](https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg)
+
 markdown语法插图
 <p align="center">
   <img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg?itok=SAzwzVq8" style="width: 450px;"/>
 </p>
+
 html语法插图
 
 ```
@@ -88,10 +90,12 @@ html语法插图
 &emsp;&emsp;在网上找到图片，右键复制图片绝对地址；或自己上传到某个平台（如Github）上，获得图片链接地址。插入图片的代码有两类写法：markdown语法或html语法。html语法比较方便设置对齐方式、图片大小等格式。
 
 ![](https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg)
+
 markdown语法插图
 <p align="center">
   <img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg?itok=SAzwzVq8" style="width: 450px;"/>
 </p>
+
 html语法插图
 ```
 
