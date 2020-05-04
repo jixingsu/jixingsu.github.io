@@ -1,49 +1,105 @@
-<!-- 写注释用的代码，不会显示 -->
-<!-- 习惯了markdown之后感觉不错 -->
-# 一级标题
+---
+layout:     post
+title:      用markdown写博客
+subtitle:   常见用法代码对照
+date:       2020-05-04
+author:     继省阁尚书
+header-img: img/post-bg-re-vs-ng2.jpg
+catalog: true
+tags:
+    - 个人网站
+    - markdown
+    - 代码
+---
 
-> 引用
-<!-- 记得换行 -->
+`<!-- 想写注释的话用这一行代码里的符号，不会显示 -->`
 
-## 二级标题
+`<!-- 习惯了markdown之后写作效率明显提高 -->`
+
+`<!-- 写代码记得换行和空格 -->`
+
+下面每一行内容，我都贴出对应代码。阴影部分，就是在markdown文档里输入的“代码”。
+
+# 一级标题——怎样用markdown写文章
+
+`# 一级标题——怎样用markdown写文章`
+
+> 其实世上本没有路，走的人多了，也就成了路。——鲁迅
+
+> 其实世上到处是坑，陷的人多了，坑也就平了。——不是鲁迅说的
+
+```
+> 其实世上本没有路，走的人多了，也就成了路。——鲁迅
+
+> 其实世上到处是坑，陷的人多了，坑也就平了。——不是鲁迅说的
+```
+## 二级标题——正文段前空两格
+`## 二级标题——正文段前空两格`
+
 &emsp;&emsp;正文，前面用两组代码实现首行空格。
-<!-- 一个&emsp;等于一个中文字 -->
 
-### 三级标题
+`&emsp;&emsp;正文，前面用两组代码实现首行空格。`
 
-*一个星号写斜体；*
-**两个星号写粗体；**
+`<!-- 一个&emsp;等于一个汉字 -->`
+
+### 三级标题——粗体斜体字号调整
+
+*一对星号之间内容斜体；*
+**两对星号之间内容粗体；**
 三个星号是分割线
+***
 <!-- 不知道又粗又斜怎么弄 -->
 
-### 改变字号
+#### 四级标题——改变字号
 
 <font size=4>我是4号字</font>
 <font size=6>我是6号字</font>
-<!-- <></>成对出现，是html语言 -->
-<p>段落</p>
-插图
+
+```
+### 三级标题——粗体斜体字号调整
+
+*一对星号之间内容斜体；*
+**两对星号之间内容粗体；**
+三个星号是分割线
+***
+<!-- 不知道又粗又斜怎么弄 -->
+
+
+#### 四级标题——改变字号
+
+<font size=4>我是4号字</font>
+<font size=6>我是6号字</font>
+```
+
+### 插入图片
+
+&emsp;&emsp;在网上找到图片，右键复制图片绝对地址；或自己上传到某个平台（如Github）上，获得图片链接地址。插入图片的代码有两类写法：markdown语法或html语法。html语法比较方便设置对齐方式、图片大小等格式。
+
+![](https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg)
+markdown语法插图
 <p align="center">
-  <img src="https://2pt2m1389nao1lh6xkkaly2w-wpengine.netdna-ssl.com/wp-content/uploads/sites/45/2019/05/Su_Shang_255x187.jpg?raw=true" alt="Photo" style="width: 450px;"/>
+  <img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg?itok=SAzwzVq8" style="width: 450px;"/>
 </p>
-<p align="left">
-  <img src="https://2pt2m1389nao1lh6xkkaly2w-wpengine.netdna-ssl.com/wp-content/uploads/sites/45/2019/05/Su_Shang_255x187.jpg?raw=true" alt="Photo" style="width: 450px;"/>
-</p>
-<p align="right">
-  <img src="https://2pt2m1389nao1lh6xkkaly2w-wpengine.netdna-ssl.com/wp-content/uploads/sites/45/2019/05/Su_Shang_255x187.jpg?raw=true" alt="Photo" style="width: 450px;"/>
-</p>
-<p>
-  <img src="https://2pt2m1389nao1lh6xkkaly2w-wpengine.netdna-ssl.com/wp-content/uploads/sites/45/2019/05/Su_Shang_255x187.jpg?raw=true" alt="Photo" style="width: 450px;"/>
-</p>
-<!-- 看来不指名对齐方式的话，是默认靠左 -->
+html语法插图
 
-## 精简版
-<img src="https://2pt2m1389nao1lh6xkkaly2w-wpengine.netdna-ssl.com/wp-content/uploads/sites/45/2019/05/Su_Shang_255x187.jpg" />
-<img src="https://sushang-thu.github.io/images/profile3.jpg" />
+```
+### 插入图片
 
-## 插入代码
+&emsp;&emsp;在网上找到图片，右键复制图片绝对地址；或自己上传到某个平台（如Github）上，获得图片链接地址。插入图片的代码有两类写法：markdown语法或html语法。html语法比较方便设置对齐方式、图片大小等格式。
 
-单行用单个`包裹代码，大段或多行用```置于首末行。
+![](https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg)
+markdown语法插图
+<p align="center">
+  <img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/spring-1210194_1280.jpg?itok=SAzwzVq8" style="width: 450px;"/>
+</p>
+html语法插图
+```
+
+### 插入代码
+
+&emsp;&emsp;单行用单个`包裹代码，大段或多行用```置于首末行。
+
+<img src="https://upload-images.jianshu.io/upload_images/259-dcf737a97e71cd73.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/879/format/webp" />
 
 ```
 #PBS -l walltime=20:00:00
@@ -57,8 +113,38 @@ source /home/shang.su/miniconda3/etc/profile.d/conda.sh
 conda activate bioinfo
 ```
 
-## 表格
-表格还是算了，还不如截个图。
+```
+### 插入代码
+
+&emsp;&emsp;单行用单个`包裹代码，大段或多行用```置于首末行。
+
+<img src="https://upload-images.jianshu.io/upload_images/259-dcf737a97e71cd73.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/879/format/webp" />
+
+<!-- 此处应有``` -->
+#PBS -l walltime=20:00:00
+#PBS -l mem=200gb
+#PBS -l nodes=1:ppn=8
+#PBS -M shang.su@vai.org
+#PBS -m abe
+
+#setup environment
+source /home/shang.su/miniconda3/etc/profile.d/conda.sh
+conda activate bioinfo
+<!-- 此处应有``` -->
+```
+
+## 插入表格
+算了，表格太麻烦，不写了。。。还不如截个图。
 
 ## 参考
 [1] [献给写作者的 Markdown 新手指南](https://www.jianshu.com/p/q81rer)
+
+```
+## 插入表格
+算了，表格太麻烦，不写了。。。还不如截个图。
+
+## 参考
+[1] [献给写作者的 Markdown 新手指南](https://www.jianshu.com/p/q81rer)
+<!--像上一行这样写，就可以实现上面参考资料超链接的效果 -->
+```
+
